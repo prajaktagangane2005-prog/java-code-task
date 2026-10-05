@@ -1,0 +1,55 @@
+public class Task1 {
+    public static void main(String[] args) {
+
+        // 1. Hello World
+        String name = "Prajakta";
+        System.out.println("Hello World");
+        System.out.println("My name is " + name);
+
+        // 2. Profit or Loss
+        int cost_price = 500;
+        int selling_price = 650;
+
+        if (selling_price > cost_price) {
+            System.out.println("Profit = " + (selling_price - cost_price));
+        } else if (cost_price > selling_price) {
+            System.out.println("Loss = " + (cost_price - selling_price));
+        } else {
+            System.out.println("No Profit No Loss");
+        }
+
+        // 3. Odd or Even
+        int num = 10;
+
+        if (num % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+
+        // 4. Voting Eligibility
+        int age = 20;
+
+        if (age >= 18) {
+            System.out.println("Eligible for Voting");
+        } else {
+            System.out.println("Not Eligible for Voting");
+        }
+
+        // 5. Anagram
+        String word1 = "listen";
+        String word2 = "silent";
+
+        char[] a = word1.toCharArray();
+        char[] b = word2.toCharArray();
+
+        java.util.Arrays.sort(a);
+        java.util.Arrays.sort(b);
+
+        if (java.util.Arrays.equals(a, b)) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+}
